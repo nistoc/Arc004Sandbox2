@@ -1,6 +1,7 @@
 ﻿using BusinessLogic.Scenarios;
 using Contracts;
 using Contracts.Events;
+using Domains;
 using System.Collections.Generic;
 
 namespace BusinessLogic

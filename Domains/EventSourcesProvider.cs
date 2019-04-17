@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Contracts;
 using Contracts.Events;
 
-namespace Contracts
+namespace Domains
 {
-    public class EventSourcesProvider
+
+    public class EventSourcesProvider : IEventSourcesProvider
     {
-        /// <summary>
-        /// Объявляем делегат
-        /// </summary>
-        /// <returns></returns>
-        public delegate void DeviceEventHappened(IDeviceEvent deviceEvent);
 
         /// <summary>
         /// Событие, возникающее при выводе денег

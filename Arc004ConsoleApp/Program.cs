@@ -1,9 +1,9 @@
 ﻿using BusinessLogic;
-using Contracts;
 using Devices;
 using System;
 using System.Threading;
 using BusinessLogic.Scenarios;
+using Domains;
 
 namespace Arc004ConsoleApp
 {
