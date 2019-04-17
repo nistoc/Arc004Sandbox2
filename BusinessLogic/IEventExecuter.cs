@@ -1,11 +1,7 @@
-﻿using Contracts.Events;
-
-namespace BusinessLogic
+﻿namespace BusinessLogic
 {
     public interface IEventExecuter
     {
-        IDeviceEventTimer Event { get; }
-
         void Execute();
     }
 }

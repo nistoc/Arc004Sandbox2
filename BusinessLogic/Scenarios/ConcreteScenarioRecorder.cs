@@ -5,7 +5,7 @@ using Domains.Models;
 
 namespace BusinessLogic.Scenarios
 {
-    internal class ScenarioRecorder : IScenarioRecorder
+    internal class ConcreteScenarioRecorder : IScenarioRecorder
     {
         public List<IDeviceEventTimer> EventsOnTime { get; private set; } = new List<IDeviceEventTimer>();
         private DateTime TimeMarker;
@@ -39,12 +39,6 @@ namespace BusinessLogic.Scenarios
         public void StopRecording()
         {
             IsRecording = false;
-            throw new NotImplementedException();
-        }
-
-        public void SaveScenario()
-        {
-            throw new NotImplementedException();
         }
     }
 }

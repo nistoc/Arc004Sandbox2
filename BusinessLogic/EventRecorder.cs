@@ -17,7 +17,7 @@ namespace BusinessLogic
 
         public IEventRecorderStopper StartRecording()
         {
-            scenarioRecorder = scenarioRecorder ?? new ScenarioRecorder();
+            scenarioRecorder = scenarioRecorder ?? new ConcreteScenarioRecorder();
 
             if (!scenarioRecorder.IsRecording)
             {

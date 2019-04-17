@@ -1,14 +1,14 @@
 ﻿using System;
 using Contracts;
-using Contracts.Events;
+using static System.Console;
 
 namespace Devices
 {
     public class DeviceCommandInterpreter : ICommandInterpreter
     {
-        public void ExecuteCommand(IDeviceEvent deviceEvent)
+        public void ExecuteCommand(string command)
         {
-            throw new NotImplementedException();
+            WriteLine($"{DateTime.Now.ToLongTimeString()} {command}");
         }
     }
 }

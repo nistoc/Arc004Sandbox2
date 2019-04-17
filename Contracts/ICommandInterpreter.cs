@@ -4,6 +4,6 @@ namespace Contracts
 {
     public interface ICommandInterpreter
     {
-        void ExecuteCommand(IDeviceEvent deviceEvent);
+        void ExecuteCommand(string command);
     }
 }
